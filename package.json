@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Siesta1510/supabase-postgrest-js/issues"
   },
-  "homepage": "https://github.com/Siesta1510/supabase-postgrest-js#readme"
+  "homepage": "https://github.com/Siesta1510/supabase-postgrest-js#readme",
+  "dependencies": {
+    "@supabase/postgrest-js": "^1.3.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
