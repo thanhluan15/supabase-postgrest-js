@@ -1,5 +1,9 @@
 import express from "express";
 import Discord, { Message, IntentsBitField } from "discord.js";
+import dotenv from "dotenv";
+
+
+dotenv.config();
 
 const app = express();
 
@@ -20,7 +24,7 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
   if (message.content === "aaa") {
-    message.reply('Hi')
+    message.reply("Hi");
   }
 });
 
